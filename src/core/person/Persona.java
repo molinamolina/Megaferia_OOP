@@ -6,24 +6,16 @@ package core.person;
 
 /**
  *
- * @author estudiante
+ * @author castillodj
  */
 public abstract class Persona {
     
     protected String nombre;
-    protected int cedula;
+    protected long cedula;
 
-    public Persona(String nombre, int cedula) {
+    public Persona(String nombre, long cedula) {
         this.nombre = nombre;
         this.cedula = cedula;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public int getCedula() {
-        return cedula;
     }
     
 }

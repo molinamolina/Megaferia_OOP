@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author estudiante
+ * @author castillodj
  */
 public class LibroImpreso extends Libro {
     

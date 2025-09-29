@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author estudiante
+ * @author castillodj
  */
 public class Audiolibro extends Libro {
     
@@ -22,6 +22,8 @@ public class Audiolibro extends Libro {
         super(titulo, autores, isbn, genero, formato, valor, editorial);
         this.duracion = duracion;
         this.narrador = narrador;
+        
+        this.narrador.addLibro(this);
     }
     
 }

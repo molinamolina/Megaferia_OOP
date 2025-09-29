@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author estudiante
+ * @author castillodj
  */
 public abstract class Libro {
     
@@ -30,34 +30,11 @@ public abstract class Libro {
         this.formato = formato;
         this.valor = valor;
         this.editorial = editorial;
-    }
-
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public ArrayList<Autor> getAutores() {
-        return autores;
-    }
-
-    public String getIsbn() {
-        return isbn;
-    }
-
-    public String getGenero() {
-        return genero;
-    }
-
-    public String getFormato() {
-        return formato;
-    }
-
-    public double getValor() {
-        return valor;
-    }
-
-    public Editorial getEditorial() {
-        return editorial;
+        
+        for (Autor autor : this.autores) {
+            autor.addLibro(this);
+        }
+        this.editorial.addLibro(this);
     }
     
 }

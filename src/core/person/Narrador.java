@@ -9,15 +9,19 @@ import java.util.ArrayList;
 
 /**
  *
- * @author estudiante
+ * @author castillodj
  */
 public class Narrador extends Persona {
     
     private ArrayList<Audiolibro> libros;
 
-    public Narrador(String nombre, int cedula) {
+    public Narrador(String nombre, long cedula) {
         super(nombre, cedula);
         this.libros = new ArrayList<>();
+    }
+    
+    public void addLibro(Audiolibro libro) {
+        this.libros.add(libro);
     }
     
 }

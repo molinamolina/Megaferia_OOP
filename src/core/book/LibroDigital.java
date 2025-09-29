@@ -10,16 +10,22 @@ import java.util.ArrayList;
 
 /**
  *
- * @author estudiante
+ * @author castillodj
  */
 public class LibroDigital extends Libro {
     
     private boolean hasHipervinculo;
     private ArrayList<String> hipervinculos;
 
-    public LibroDigital(String titulo, ArrayList<Autor> autores, String isbn, String genero, String formato, double valor, Editorial editorial, boolean hasHipervinculo, ArrayList<String> hipervinculos) {
+    public LibroDigital(String titulo, ArrayList<Autor> autores, String isbn, String genero, String formato, double valor, Editorial editorial) {
         super(titulo, autores, isbn, genero, formato, valor, editorial);
-        this.hasHipervinculo = hasHipervinculo;
+        this.hasHipervinculo = false;
+        this.hipervinculos = null;
+    }
+    
+    public LibroDigital(String titulo, ArrayList<Autor> autores, String isbn, String genero, String formato, double valor, Editorial editorial, ArrayList<String> hipervinculos) {
+        super(titulo, autores, isbn, genero, formato, valor, editorial);
+        this.hasHipervinculo = true;
         this.hipervinculos = hipervinculos;
     }
     

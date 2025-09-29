@@ -8,18 +8,26 @@ import java.util.ArrayList;
 
 /**
  *
- * @author estudiante
+ * @author castillodj
  */
 public class Stand {
     
-    private int id;
+    private long id;
     private double precio;
     private ArrayList<Editorial> editoriales;
 
-    public Stand(int id, double precio) {
+    public Stand(long id, double precio) {
         this.id = id;
         this.precio = precio;
         this.editoriales = new ArrayList<>();
+    }
+    
+    public void addEditorial(Editorial editorial) {
+        this.editoriales.add(editorial);
+    }
+
+    public long getId() {
+        return id;
     }
     
 }

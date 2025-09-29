@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author estudiante
+ * @author castillodj
  */
 public class Editorial {
     
@@ -28,30 +28,16 @@ public class Editorial {
         this.gerente = gerente;
         this.libros = new ArrayList<>();
         this.stands = new ArrayList<>();
+        
+        this.gerente.setEditorial(this);
     }
-
-    public String getNit() {
-        return nit;
+    
+    public void addLibro(Libro libro) {
+        this.libros.add(libro);
     }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public String getDireccion() {
-        return direccion;
-    }
-
-    public Gerente getGerente() {
-        return gerente;
-    }
-
-    public ArrayList<Libro> getLibros() {
-        return libros;
-    }
-
-    public ArrayList<Stand> getStands() {
-        return stands;
+    
+    public void addStand(Stand stand) {
+        this.stands.add(stand);
     }
     
 }
