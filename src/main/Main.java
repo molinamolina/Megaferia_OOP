@@ -9,6 +9,7 @@ import core.megaferia.Megaferia;
 import core.person.Gerente;
 import core.person.Narrador;
 import core.person.Autor;
+import core.book.*;
 
 /**
  *
@@ -66,7 +67,20 @@ public class Main {
         Autor autor2 = new Autor("pepito 2", 373638123);
         Autor autor3 = new Autor("Pepita", 987654321);
         
+        // Paso (9)
+        // todo: definir sin que se rompa todo :v
+        LibroDigital libro1 = new LibroDigital();
+        LibroImpreso libro2 = new LibroImpreso();
+        Audiolibro libro3 = new Audiolibro();
         
+        // testing
+        editorial1.addLibro(libro1);
+        editorial2.addLibro(libro2);
+        editorial3.addLibro(libro3);
+        
+        autor1.addLibro(libro1);
+        autor2.addLibro(libro2);
+        autor3.addLibro(libro3);
     }
     
 }
