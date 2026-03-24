@@ -61,6 +61,10 @@ public class Main {
         editorial2.addStand(megaferia.getStand(15772400));
         
         // Paso (8)
+        Autor autor1 = new Autor("Pepito", 123456789);
+        Autor autor2 = new Autor("pepito 2", 373638123);
+        Autor autor3 = new Autor("Pepita", 987654321);
+        
         
     }
     
