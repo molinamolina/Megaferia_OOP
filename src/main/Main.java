@@ -8,6 +8,7 @@ import core.megaferia.Editorial;
 import core.megaferia.Megaferia;
 import core.person.Gerente;
 import core.person.Narrador;
+import core.person.Autor;
 
 /**
  *
